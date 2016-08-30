@@ -1,0 +1,32 @@
+<div class="row">
+
+            <p>
+
+                <a href="#/">Back to Posts</a>
+
+            </p>
+
+            <h2>Comments</h2>
+    
+
+
+
+
+
+        <div ng-repeat="t in comments" class="table table-bordered table-hover">
+            
+            <h5> Post ID: {{ t.postId }}</h5>
+            <h5> ID: {{ t.id }}</h5>
+            <h4>Name: {{ t.name  }}</h4>
+            <h4>Email: {{ t.email }}</h4>
+            <h4> {{ t.body }}</h4>
+       
+
+
+    </div>
+
+
+
+        
+</div>
+

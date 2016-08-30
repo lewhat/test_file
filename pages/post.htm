@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Posts</h2>
+        
+        <div class="form-group">
+        
+            <div ng-repeat="t in posts"class="table table-bordered table-hover">
+                <h5> User ID: {{ t.userId }}</h5>
+    <!--            <h5> ID: {{ t.id }}</h5>-->
+                <h4>Title: {{ t.title  }}</h4>
+                <h4>Post: {{ t.body }}</h4>
+            
+<!--                <a href='#/comment'  id="mybtn" class="btn btn-primary btn-xs">comments</a>-->
+                
+            
+                <button type="button" ng-model="$scope.posts[index].userId" ng-click='getComment($index)' class="btn btn-primary btn-xs">Comments</button>
+        
+        </div>
+    
+    
+    </div>
+
+
+</div>
